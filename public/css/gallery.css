@@ -1,0 +1,112 @@
+body {
+    background-size: cover;
+}
+
+.hi-slide {
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+
+.hi-slide .hi-pre,
+.hi-slide .hi-next {
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-pre:hover,
+.hi-slide .hi-next:hover {
+    opacity: 1;
+    background-color: goldenrod;
+}
+
+.hi-slide .hi-pre {
+    left: 59px;
+}
+
+.hi-slide .hi-pre::before {
+    content: '<';
+}
+
+.hi-slide .hi-next {
+    right: -59px;
+}
+
+.hi-slide .hi-next::before {
+    content: '>';
+}
+
+.hi-slide>ul {
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide>ul>li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid gold;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.hi-slide>ul>li>img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+/* book racks */
+
+.book-rack {
+    background: linear-gradient(to bottom left, #663300 0%, #996633 100%);
+    width: 90%;
+    height: 100%;
+}
+
+.book-row {
+    background: linear-gradient(to bottom, #663300 0%, #996633 100%);
+    right: 50px;
+    height: 200px;
+}
+
+.one-book {
+    margin: 7px 0 0 2.5%;
+    float: left;
+    transition: transform .2s;
+    position: relative;
+}
+
+.one-book:hover {
+    transform: scale(1.5);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
